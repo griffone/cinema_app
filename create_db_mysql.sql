@@ -47,6 +47,7 @@ CREATE TABLE pelicula (
 );
 
 CREATE TABLE actor_por_pelicula (
+    actor_por_pelicula_id INT AUTO_INCREMENT PRIMARY KEY,
     actor_id INT NOT NULL,
     pelicula_id INT NOT NULL,
     CONSTRAINT fk_actor_por_pelicula_actor_id FOREIGN KEY (actor_id) REFERENCES actor(actor_id),
